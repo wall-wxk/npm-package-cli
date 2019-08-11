@@ -48,7 +48,7 @@ function output(creation){
         creation.copy('.editorconfig', projectResolve('.editorconfig'));
         creation.copy('.eslintignore', projectResolve('.eslintignore'));
         creation.copy('.eslintrc.js', projectResolve('.eslintrc.js'));
-        creation.copy('.gitignore', projectResolve('.gitignore'));
+        creation.copy('gitignore', projectResolve('.gitignore'));
         creation.copy('.npmrc', projectResolve('.npmrc'));
         creation.copy('tsconfig.json', projectResolve('tsconfig.json'));
         creation.copy('tsconfig.build.json', projectResolve('tsconfig.build.json'));
