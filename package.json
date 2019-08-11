@@ -33,6 +33,12 @@
     "standard-version": "^7.0.0"
   },
   "dependencies": {},
+  "files": [
+    "node_modules",
+    "bin",
+    "src",
+    "template"
+  ],
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $GIT_PARAMS"
