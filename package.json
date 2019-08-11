@@ -1,0 +1,55 @@
+{
+  "name": "npm-package-cli",
+  "version": "1.0.0",
+  "description": "command line interface of making personal npm package.",
+  "author": {
+    "name": "leon",
+    "email": "582104384@qq.com",
+    "url": "https://wangxiaokai.vip"
+  },
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz",
+    "release": "standard-version",
+    "push:publish": "git push --follow-tags origin master && npm publish"
+  },
+  "bin": {
+    "npg-cli": "bin/cli"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "chalk": "^2.4.2",
+    "commander": "^3.0.0",
+    "commitizen": "^4.0.3",
+    "commitlint-config-cz": "^0.12.1",
+    "cz-customizable": "^6.2.0",
+    "fs-extra": "^8.1.0",
+    "husky": "^3.0.3",
+    "inquirer": "^6.5.0",
+    "mem-fs": "^1.1.3",
+    "mem-fs-editor": "^6.0.0",
+    "shelljs": "^0.8.3",
+    "standard-version": "^7.0.0"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "keywords": [
+    "cli",
+    "personal npm package"
+  ],
+  "homepage": "https://github.com/wall-wxk/npm-package-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wall-wxk/npm-package-cli.git"
+  }
+}
